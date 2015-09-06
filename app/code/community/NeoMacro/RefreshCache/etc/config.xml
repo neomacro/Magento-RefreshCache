@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config>
+    <crontab>
+        <jobs>
+            <neomacro_refresh_cache>
+                <schedule>
+                    <cron_expr>* * * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>neomacrorefreshcache/observer::refreshCache</model>
+                </run>
+            </neomacro_refresh_cache>
+        </jobs>
+    </crontab>
+    <global>
+        <models>
+            <neomacrorefreshcache>
+                <class>NeoMacro_RefreshCache_Model</class>
+            </neomacrorefreshcache>
+        </models>
+    </global>
+    <modules>
+        <NeoMacro_RefreshCache>
+            <version>0.0.1</version>
+        </NeoMacro_RefreshCache>
+    </modules>
+</config>
