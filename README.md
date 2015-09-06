@@ -1,6 +1,6 @@
-# NeoMacro RefreshCache
+# NeoMacro Magento RefreshCache
 
-NeoMacro RefreshCache is a simple extension which uses Magento Cron capabilities to
+NeoMacro Magento RefreshCache is a simple extension which uses Magento Cron capabilities to
 automatically refresh all cache types in Magento.
 
 You must have Magento Cron properly set or this extension will not work.
