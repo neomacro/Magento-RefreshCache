@@ -12,7 +12,8 @@ class NeoMacro_RefreshCache_Model_Observer extends Mage_Core_Model_Abstract
         static::$singleton = $this;
 
         try {
-            $allTypes = Mage::app()->useCache();
+            // $allTypes = Mage::app()->useCache(); /* All cache types */
+            $allTypes = Mage::app()->getCacheInstance()->getInvalidatedTypes(); /* Only invalidated cache types */
             foreach ($allTypes as $type => $value) {
                 Mage::app()->getCacheInstance()->cleanType($type);
             }
